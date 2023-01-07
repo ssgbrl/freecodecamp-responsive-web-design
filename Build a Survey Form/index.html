@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Survey Form Project</title>
+</head>
+<body>
+    <h1 id="title">Front-end Developer Application Form</h1>
+    <p id="description">Please fill out the form below</p>
+
+    <form id="survey-form">
+
+        <fieldset>
+            <label for="name" id="name-label">Name: <input type="text" name="name" id="name" placeholder="Your Name" required></label>
+            <label for="email" id="email-label">E-mail: <input type="email" name="email" id="email" placeholder="Your E-mail" required></label>
+            <label for="age" id="number-label">Age: <input type="number" name="number" id="number" min="13" max="60" placeholder="Your Age" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown"><span class="span">What's your current status?</span>
+                <select id="dropdown" required>
+                    <option value="dropdown-option" disabled selected>Select</option>
+                    <option value="dropdown-option">Unenployed</option>
+                    <option value="dropdown-option">Working Full-Time</option>
+                    <option value="dropdown-option">Working Part-Time</option>
+                    <option value="dropdown-option">Freelancer</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="availability" name="availability"><span class="span">Are you available for a possible relocation?</span>
+                <input type="radio" name="radio" class="align" value="yes">Yes</input>
+                <input type="radio" name="radio" class="align" value="no">No</input>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="experience" name="experience"><span class="span">Please choose the technologies you're familiar with:</span>
+                <ul id="experience-list">
+                    <li><input type="checkbox" class="align" value="experience-01">JavaScript</input></li>
+                    <li><input type="checkbox" class="align" value="experience-02">HTML</input></li>
+                    <li><input type="checkbox" class="align" value="experience-03">CSS</input></li>
+                    <li><input type="checkbox" class="align" value="experience-04">React</input></li>
+                    <li><input type="checkbox" class="align" value="experience-05">Angular</input></li>
+                </ul>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="comments"><span class="span">(Optional) Comments</span>
+                <textarea name="comments-area" id="comments-area" value="comments" cols="30" rows="4" placeholder="Write any comments here"></textarea>
+            </label>
+        </fieldset>
+
+            <label for="submit-button">
+                <input type="submit" id="submit"></button>
+            </label>            
+    </form>
+</body>
+</html>
