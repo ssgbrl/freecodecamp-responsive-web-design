@@ -9,7 +9,7 @@ Neste projeto foi elaborado um formulario para preenchimento e coleta de dados d
 - Semântica HTML
 - Manipulação de cores com CSS
 
-Visualize o projeto final clicando [aqui](https://ssgbrl-survey.netlify.app)
+Visualize o projeto final clicando <a href="https://ssgbrl-survey.netlify.app" target="_blank">aqui</a>
 
 ___
 
